@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="SpsRltMO2tMPuQA8Zpuu" name="Page-1">
-        <mxGraphModel dx="8425" dy="2293" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="5770" dy="677" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -125,8 +125,8 @@
                 <mxCell id="50" value="&lt;h1&gt;боундед контексты&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="61" y="993" width="309" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="51" value="подбор воркера" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
-                    <mxGeometry x="343" y="1198" width="120" height="60" as="geometry"/>
+                <mxCell id="51" value="подбор воркера (тут еще и требование про отдельный язык разработчиков алгоритма)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
+                    <mxGeometry x="343" y="1198" width="179" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="52" value="выполнение услуги воркером" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
                     <mxGeometry x="343" y="1274" width="120" height="60" as="geometry"/>
@@ -1674,6 +1674,104 @@
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="-2482" y="2195" as="sourcePoint"/>
                         <mxPoint x="-2432" y="2145" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="699" value="&lt;h1&gt;Важные характеристики&lt;/h1&gt;&lt;p&gt;1. availability - клиент платит за заявки. цель продукта - улучшить работу клиентов разгрузив их. Если они не могут сделать заказ - продукт не выполняет своей функции.&lt;/p&gt;&lt;p&gt;2. Scalability. - ожидаем ddos атаки на отклики на вакансии. Помним что конкурент загнулся от ddos.&amp;nbsp;&lt;/p&gt;&lt;p&gt;3. Modifiability - у нас в требованиях явно написано, что алгоритмы матчинга и отсева должны быть самыми передовыми и исследователи над ними еще думают. Это значит, что эти части системы будут постоянно меняться. Скорее всего со временем в таком проекте появятся и аб тесты, и быстрые выкладки экспериментальных фич, и проверка гипотез, и тд. Все надо добавлять быстро и катить незаметно для пользователей и бизнеса. Плюс важен TTM. взято из требований раздел общие пожелания о системе&lt;/p&gt;&lt;p&gt;4.&amp;nbsp; deployability - аналогично 3&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="213" y="7558" width="623" height="242" as="geometry"/>
+                </mxCell>
+                <mxCell id="700" value="&lt;h1&gt;Выбор стиля&lt;/h1&gt;&lt;p&gt;С учетом выбранных выше важных для проекта характеристик, а так же что деньги бизнесу не важны, решено было взять микросервисных стиль.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="213" y="7800" width="638" height="167" as="geometry"/>
+                </mxCell>
+                <mxCell id="719" value="" style="swimlane;startSize=0;fillStyle=solid;fillColor=none;rounded=0;shadow=0;glass=0;gradientColor=none;swimlaneFillColor=#CCFFCC;" vertex="1" parent="1">
+                    <mxGeometry x="94" y="8234" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="720" value="подбор котов на вакансии" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="719">
+                    <mxGeometry x="40" y="50" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="721" value="" style="swimlane;startSize=0;fillStyle=solid;fillColor=none;rounded=0;shadow=0;glass=0;gradientColor=none;swimlaneFillColor=#CCFFCC;" vertex="1" parent="1">
+                    <mxGeometry x="491" y="8515" width="358" height="279" as="geometry"/>
+                </mxCell>
+                <mxCell id="762" style="edgeStyle=none;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" edge="1" parent="721" source="725" target="757">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="763" value="" style="edgeStyle=none;rounded=0;html=1;labelBackgroundColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" edge="1" parent="721" source="725" target="756">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="725" value="услуги клиентам" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="721">
+                    <mxGeometry x="27" y="28" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="756" value="матчинг воркера" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="721">
+                    <mxGeometry x="203" y="17" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="757" value="выполнение услуги" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="721">
+                    <mxGeometry x="45" y="186" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="732" value="" style="swimlane;startSize=0;fillStyle=solid;fillColor=none;rounded=0;shadow=0;glass=0;gradientColor=none;swimlaneFillColor=#CCFFCC;" vertex="1" parent="1">
+                    <mxGeometry x="504" y="8176" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="733" value="ставки" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="732">
+                    <mxGeometry x="40" y="50" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="736" value="" style="swimlane;startSize=0;fillStyle=solid;fillColor=none;rounded=0;shadow=0;glass=0;gradientColor=none;swimlaneFillColor=#CCFFCC;" vertex="1" parent="1">
+                    <mxGeometry x="1029" y="8438" width="188" height="119" as="geometry"/>
+                </mxCell>
+                <mxCell id="745" value="отдел качества" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="736">
+                    <mxGeometry x="34" y="25" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="746" value="" style="swimlane;startSize=0;fillStyle=solid;fillColor=none;rounded=0;shadow=0;glass=0;gradientColor=none;swimlaneFillColor=#CCFFCC;" vertex="1" parent="1">
+                    <mxGeometry x="936" y="8670" width="200" height="132" as="geometry"/>
+                </mxCell>
+                <mxCell id="747" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="746" target="752">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="70" y="80" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="751" style="edgeStyle=none;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="746" source="752">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="80" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="752" value="работа склада" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="746">
+                    <mxGeometry x="38" y="38" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="758" style="edgeStyle=none;rounded=0;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" edge="1" parent="1" source="720" target="757">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="759" value="асинхронно" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#E6E6E6;" vertex="1" connectable="0" parent="758">
+                    <mxGeometry x="-0.1392" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="760" style="edgeStyle=none;rounded=0;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" edge="1" parent="1" source="725" target="733">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="761" value="асинхронно" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="760">
+                    <mxGeometry x="-0.2626" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="764" style="edgeStyle=none;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" edge="1" parent="1" source="757" target="752">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="765" value="асинхронно" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="764">
+                    <mxGeometry x="0.4947" y="3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="766" style="edgeStyle=none;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" edge="1" parent="1" source="757" target="745">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="767" value="асинхронно" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="766">
+                    <mxGeometry x="0.7273" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="768" style="edgeStyle=none;rounded=0;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;labelBackgroundColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" edge="1" parent="1" source="752" target="757">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="769" value="асинхронно" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="768">
+                    <mxGeometry x="-0.3585" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
             </root>
